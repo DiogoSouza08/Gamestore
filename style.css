@@ -352,6 +352,11 @@ h2 {
   font-family: "Gilroy-Bold", sans-serif;
   color: #fff;
 }
+@media only screen and (min-width: 426px) {
+  .desconto {
+    font-size: 1.3vw;
+  }
+}
 
 .noticias-container {
   display: flex;
@@ -444,7 +449,7 @@ h2 {
 @media only screen and (max-width: 470px) {
   .subscribe-container {
     background-image: url(./Imagens/fundo\ subscribe\ site\ gamer\ mobile.jpg);
-    height: 160vw;
+    height: 165vw;
     margin-top: 12%;
     align-items: center;
     justify-content: end;
@@ -487,6 +492,23 @@ h2 {
   .send-container {
     width: 100%;
   }
+}
+@media only screen and (max-width: 360px) {
+  .send-container {
+    width: 100%;
+  }
+  .send-container .btn {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.send-container .btn {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 form {
@@ -623,7 +645,8 @@ footer .social-medias #icon {
     font-size: 2.5vw;
   }
 }
-.hover-card-game-desconto .fa-solid {
+
+#fa-solid {
   margin-top: 5%;
   z-index: 999;
   cursor: pointer;

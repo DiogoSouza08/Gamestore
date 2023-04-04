@@ -271,6 +271,7 @@ form{
     width: 50%;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
+
     @media only screen and (max-width: 1030px) {
       width: 52%;
     }
@@ -367,6 +368,10 @@ form{
   top: 0;  
   font-family: $font-bold;
   color: #fff;
+
+  @media only screen and (min-width: 426px) {
+   font-size: 1.3vw;
+  }
 }
 
 .noticias-container{
@@ -391,7 +396,6 @@ form{
   background-size: 120%;
   background-repeat: no-repeat;
   color: #fff;
-  
   background-image: url(./Imagens/news-1.png);
   font-size: 2vw;
   font-family: $font-bold;
@@ -455,7 +459,7 @@ form{
   background-repeat: no-repeat ;
   @media only screen and (max-width: 470px) {
     background-image: url(./Imagens/fundo\ subscribe\ site\ gamer\ mobile.jpg);
-    height: 160vw;
+    height: 165vw;
     margin-top: 12%;
     align-items: center;
     justify-content: end;
@@ -494,6 +498,22 @@ form{
   padding-top: 1.5%;
   @media only screen and (max-width: 470px) {
     width: 100%;
+  }
+  @media only screen and (max-width: 360px) {
+    width: 100%;
+    .btn{
+      align-items: center;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .btn{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -604,7 +624,9 @@ footer{
   margin-top: 5%;
   z-index: 999;
   cursor: pointer;
+
 }
+
 }
 
 
@@ -630,11 +652,12 @@ footer{
     }
   }
 
-.fa-solid{
+
+}
+
+#fa-solid{
   margin-top: 5%;
   z-index: 999;
   cursor: pointer;
-}
 
 }
-
