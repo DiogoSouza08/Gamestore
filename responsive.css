@@ -1,0 +1,74 @@
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 4.4%;
+  }
+  main {
+    justify-content: start;
+  }
+  .slogan-and-button-principal-container {
+    width: 65%;
+    margin-left: 4%;
+    justify-content: start;
+  }
+  .slogan-and-button-principal-container h1 {
+    font-size: 7vw;
+  }
+  .slogan-description {
+    font-size: 2vw;
+  }
+  .input-group {
+    display: none;
+  }
+  h2 {
+    font-size: 5.5vw;
+    padding-top: 7%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main {
+    justify-content: center;
+  }
+  .slogan-and-button-principal-container {
+    width: 80%;
+    margin-left: 0%;
+    justify-content: center;
+  }
+  .slogan-and-button-principal-container h1 {
+    font-size: 9vw;
+  }
+  .slogan-and-button-principal-container .slogan-description {
+    font-size: 3.8vw;
+  }
+  .carousel {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    justify-content: center;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 8vw;
+  }
+  .title-popular-games-container {
+    padding-top: 11%;
+  }
+  .ver-tudo {
+    font-size: 3.4vw;
+    padding-top: 11.7%;
+  }
+  .card-text {
+    font-size: 5.7vw;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .text-card-container {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  ul {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */

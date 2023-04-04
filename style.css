@@ -1,0 +1,630 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #151c37;
+  flex-direction: column;
+  height: auto;
+}
+
+header {
+  display: flex;
+  background-color: #151c37;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Gilroy-Medium", sans-serif;
+  padding: 1.3%;
+  text-align: center;
+  width: 100%;
+}
+
+.input-group {
+  width: 20%;
+}
+
+#search-addon {
+  background-image: linear-gradient(to right, #19D3E8, #Af2cff);
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-control {
+  background-color: rgba(25, 211, 232, 0);
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding-top: 1.3%;
+}
+ul li {
+  font-size: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1306px) {
+  ul li {
+    font-size: 15px;
+  }
+}
+
+a {
+  color: #fff;
+}
+
+.logo {
+  font-weight: bold;
+  color: #19D3E8;
+  padding-left: 3%;
+  font-size: 20px;
+}
+
+.icons {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  background-image: url(./Imagens/main-img.webp);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.slogan-and-button-principal-container {
+  display: flex;
+  width: 45%;
+  font-family: "Gilroy-Bold", sans-serif;
+  height: auto;
+  flex-direction: column;
+  margin-left: 4.6%;
+  margin-top: -8%;
+}
+.slogan-and-button-principal-container h1 {
+  font-size: 5vw;
+}
+
+.btn-container {
+  display: flex;
+  padding-top: 6%;
+}
+
+.btn {
+  border: none;
+  width: 40%;
+  font-size: 1.2vw;
+  color: #fff;
+  cursor: pointer;
+  height: auto;
+  padding: 2.5%;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 10px;
+  font-family: "Gilroy-Bold", sans-serif;
+  background-image: linear-gradient(to right, #19D3E8, #Af2cff, #19D3E8, #Af2cff);
+  box-shadow: 0 4px 15px 0 rgba(20, 20, 20, 0.75);
+}
+@media only screen and (max-width: 768px) {
+  .btn {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .btn {
+    font-size: 3vw;
+  }
+}
+
+form {
+  background-color: #151c37;
+}
+
+.search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: crimson;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+  box-shadow: 0 0 25px 0 rgb(0, 0, 0);
+}
+
+.slogan-description {
+  font-size: 1.3vw;
+  font-family: "Gilroy-Medium", sans-serif;
+  padding-top: 3%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  border-radius: 7%;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.col-md-3 {
+  padding: 3.7%;
+  background-color: #151c37;
+}
+
+.carousel-control-prev {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.7%;
+  width: 2.5%;
+}
+
+.carousel-control-next {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0.7%;
+  width: 2.5%;
+}
+
+.card-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  padding-left: 5%;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 1.5vw;
+  line-height: 115%;
+  color: #fff;
+}
+
+.popular-games-container {
+  color: #151c37;
+  background-color: #f0f5fe;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+h2 {
+  padding-top: 7%;
+  font-size: 4vw;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.title-popular-games-container {
+  width: 100%;
+  display: flex;
+  padding: 3%;
+  justify-content: space-between;
+}
+
+.ver-tudo {
+  padding-top: 9.5%;
+  cursor: pointer;
+  color: #898a8d;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.text-card-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  font-size: 1.2vw;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #151c37;
+  color: #fff;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.text-card-container .text-and-precing {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 55%;
+  flex-direction: column;
+}
+.text-card-container .precing {
+  color: #19D3E8;
+  font-family: "Gilroy-Bold", sans-serif;
+  position: absolute;
+  padding-top: 15%;
+}
+
+.game-pre-venda {
+  width: 50%;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+@media only screen and (max-width: 1030px) {
+  .game-pre-venda {
+    width: 52%;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .game-pre-venda {
+    width: 85%;
+  }
+}
+
+.pre-venda-container {
+  color: #151c37;
+  background-color: #f0f5fe;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.pre-venda-container .card-pre-venda {
+  background-color: #151c37;
+  display: flex;
+  border-radius: 5%;
+  align-items: center;
+  width: 48.5%;
+  height: auto;
+  cursor: pointer;
+}
+.pre-venda-container .cards-pre-venda-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+@media only screen and (max-width: 425px) {
+  .pre-venda-container .cards-pre-venda-container {
+    flex-direction: column;
+  }
+  .pre-venda-container .card-pre-venda {
+    width: 100%;
+    margin: 1.7%;
+  }
+}
+.pre-venda-container .description-game-pre-venda {
+  font-size: 1vw;
+  margin: 7%;
+  color: #aaaaaa;
+  text-align: justify;
+}
+@media only screen and (max-width: 425px) {
+  .pre-venda-container .description-game-pre-venda {
+    font-size: 1.7vw;
+  }
+}
+.pre-venda-container .title-pre-venda {
+  padding-top: 4%;
+}
+.pre-venda-container .text-card-pre-venda-container {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.6vw;
+}
+@media only screen and (max-width: 425px) {
+  .pre-venda-container .text-card-pre-venda-container {
+    font-size: 4vw;
+  }
+}
+.pre-venda-container .text-card-pre-venda-container .precing {
+  color: #19D3E8;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.desconto {
+  background-color: #19D3E8;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  font-family: "Gilroy-Bold", sans-serif;
+  color: #fff;
+}
+
+.noticias-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+  padding: 2.5%;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 425px) {
+  .noticias-container {
+    flex-direction: column;
+  }
+}
+
+.news {
+  align-items: end;
+  justify-content: start;
+  width: 48%;
+  display: flex;
+  border-radius: 7%;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  color: #fff;
+  background-image: url(./Imagens/news-1.png);
+  font-size: 2vw;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+@media only screen and (max-width: 425px) {
+  .news {
+    font-size: 4vw;
+    width: 100%;
+  }
+}
+.news .title-and-button-news-container {
+  width: 70%;
+  padding: 5%;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.news .btn {
+  width: 50%;
+  margin-top: 5%;
+  font-size: 1.3vw;
+  text-align: center;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+@media only screen and (max-width: 425px) {
+  .news .btn {
+    font-size: 2.5vw;
+    width: 40%;
+  }
+}
+
+#news2 {
+  background-image: url(./Imagens/news-2.png);
+}
+@media only screen and (max-width: 425px) {
+  #news2 {
+    margin-top: 2%;
+  }
+}
+
+#news3 {
+  background-image: url(./Imagens/news-3.png);
+  margin-top: 2%;
+}
+
+#news4 {
+  background-image: url(./Imagens/news-4.png);
+  margin-top: 2%;
+}
+
+.subscribe-container {
+  width: 100%;
+  height: 35vw;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  background-image: url(./Imagens/fundo-subscribe.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 470px) {
+  .subscribe-container {
+    background-image: url(./Imagens/fundo\ subscribe\ site\ gamer\ mobile.jpg);
+    height: 160vw;
+    margin-top: 12%;
+    align-items: center;
+    justify-content: end;
+  }
+}
+.subscribe-container .subscribe {
+  width: 50%;
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 3.5vw;
+}
+@media only screen and (max-width: 470px) {
+  .subscribe-container .subscribe {
+    width: 100%;
+    font-size: 10vw;
+  }
+}
+.subscribe-container .subscribe .description-subscribe {
+  font-size: 1.3vw;
+  width: 88%;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+@media only screen and (max-width: 470px) {
+  .subscribe-container .subscribe .description-subscribe {
+    font-size: 2.5vw;
+    width: 82%;
+  }
+}
+
+.send-container {
+  width: 51.4%;
+  padding-top: 1.5%;
+}
+@media only screen and (max-width: 470px) {
+  .send-container {
+    width: 100%;
+  }
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+@media only screen and (max-width: 470px) {
+  form {
+    margin-bottom: 5.5%;
+  }
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type=email] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 60%;
+}
+
+button[type=submit] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 20%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 3%;
+}
+button[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #151c37;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  font-size: 1vw;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 425px) {
+  footer .logo {
+    font-size: 15px;
+    padding-top: 13%;
+  }
+}
+footer .option {
+  cursor: pointer;
+}
+@media only screen and (max-width: 425px) {
+  footer .option {
+    display: none;
+  }
+}
+footer .social-medias {
+  display: flex;
+  width: 6%;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 425px) {
+  footer .social-medias {
+    width: 16%;
+    font-size: 3.4vw;
+  }
+}
+footer .social-medias #icon {
+  cursor: pointer;
+}
+
+.hover-card-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(21, 28, 55, 0.6117647059);
+  height: 70%;
+  flex-direction: column;
+  display: none;
+}
+.hover-card-game .btn {
+  font-size: 0.8vw;
+  width: 50%;
+  padding: 5%;
+  cursor: pointer;
+  box-shadow: none;
+  z-index: 999;
+}
+@media only screen and (max-width: 550px) {
+  .hover-card-game .btn {
+    font-size: 2.5vw;
+  }
+}
+.hover-card-game .fa-solid {
+  margin-top: 5%;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.hover-card-game-desconto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(21, 28, 55, 0.6117647059);
+  height: 60%;
+  flex-direction: column;
+  display: none;
+}
+.hover-card-game-desconto .btn {
+  font-size: 0.8vw;
+  width: 50%;
+  box-shadow: none;
+  z-index: 999;
+  padding: 5%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 550px) {
+  .hover-card-game-desconto .btn {
+    font-size: 2.5vw;
+  }
+}
+.hover-card-game-desconto .fa-solid {
+  margin-top: 5%;
+  z-index: 999;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

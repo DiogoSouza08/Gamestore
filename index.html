@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="cards.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>GameStore</title>
+</head>
+<body>
+    <header>
+   <div class="logo">
+      Gamestore
+   </div>
+        <ul>
+            <li>Catalogo</li>
+            <li>Pré-vendas</li>
+            <li>Venda</li>
+            <li>Noticias</li>
+            <li>Sobre</li>
+        </ul>
+        <div class="input-group rounded">
+          <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+
+          <div class="icons">
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+
+    </header>  
+    <main>
+        <div class="slogan-and-button-principal-container">
+        <h1>O MUNDO GAMER PERTENCE A VOCÊ!</h1> 
+            <p class="slogan-description">
+                Desafie-se com novas aventuras e expanda seus horizontes como gamer, adquira já os seus novos jogos!
+            </p>
+            <div class="btn-container">
+                <button class="btn ">Compre Agora</button>
+            </div>
+        </div>
+    </main>
+    
+
+<!-- card carousel -->
+
+<div id="carouselExampleControls" class="carousel slide" data-intervall="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-md-3 ">
+    
+          <div class="card">
+            <div class="card-text">Super Descontos!</div>
+            <img class="card-img-top" src="Imagens/card1.png" alt="Card image cap">
+          </div>
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-text">Atualização grátis!</div>
+            <img class="card-img-top" src="Imagens/card2.png" alt="Card image cap">
+          </div>
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-text">Descontos nos <br>jogos de tiro!</div>
+            <img class="card-img-top" src="Imagens/card3.png" alt="Card image cap">
+          </div>
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-text">Descontos na <br>pré-venda!</div>
+            <img class="card-img-top" src="Imagens/card4.png" alt="Card image cap">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-text">Descontos nos jogos<br> de corrida!</div>
+            <img class="card-img-top" src="Imagens/card5.png" alt="Card image cap">
+          </div>
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-text">Descontos nos jogos  <br>de esportes!</div>
+            <img class="card-img-top" src="Imagens/card6.png" alt="Card image cap">
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-text">Jogos Gratuitos!</div>
+            <img class="card-img-top" src="Imagens/card7.png" alt="Card image cap">
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-text">Edições de Colecionador</div>
+            <img class="card-img-top" src="Imagens/card8.png" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- botoes de controle carrosel -->
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  
+  </div>
+ 
+</div>
+
+<!-- popular games -->
+<div class="popular-games-container">
+  <div class="title-popular-games-container">
+    <h2>POPULARES</h2>
+      <p class="ver-tudo"><u>Ver tudo</u></p>
+  </div>
+  <div class="l-container">
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular1.png);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Spider-Man</P>
+            <p class="precing">R$ 159,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular2.jpg);" >
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Hogwarts Legacy</P>
+            <p class="precing">R$ 249,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular3.png);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Days Gone</P>
+            <p class="precing">R$ 99,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular4.png);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Ghost of Tsushima</P>
+            <p class="precing">R$ 219,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular5.jpg);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Dead Space</P>
+            <p class="precing">R$ 249,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular6.jpg);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Dying light 2</P>
+            <p class="precing">R$ 199,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular7.png);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Stray</P>
+            <p class="precing">R$ 179,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular8.jpg);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Dirt5</P>
+            <p class="precing">R$ 129,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular9.png);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Destiny 2</P>
+            <p class="precing">R$ 149,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular10.jpg);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Battlefield 2042</P>
+            <p class="precing">R$ 159,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular11.jpg);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>FarCry 6</P>
+            <p class="precing">R$ 159,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-popular12.jpg);">
+        <div class="hover-card-game">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Fifa 23</P>
+            <p class="precing">R$ 199,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- prevenda -->
+<div class="pre-venda-container">
+  <div class="title-popular-games-container">
+    <h2>PRÉ-VENDA</h2>
+      <p class="ver-tudo"><u>Ver tudo</u></p>
+  </div>
+      <div class="cards-pre-venda-container">
+        <div class="card-pre-venda">
+          <img src="./Imagens/game-pre-venda1.png" alt="" class="game-pre-venda">
+            <div class="text-card-pre-venda-container">
+              <P class="title-pre-venda">Final Fantasy XVI</P>
+                <p class="description-game-pre-venda">Final Fantasy XVI é um jogo eletrônico de RPG de ação desenvolvido e publicado pela Square Enix. É o décimo sexto título principal da série Final Fantasy é um jogo para PlayStation 5. Está sendo dirigido por Hiroshi Takai e produzido por Naoki Yoshida.<br><br><b><u>Data de Lançamento: 2024</u></b></p>
+                 <p class="precing">R$ 299,90</p>
+            </div>
+        </div>
+        <div class="card-pre-venda">
+          <img src="./Imagens/game-pre-venda2.png" alt="" class="game-pre-venda">
+            <div class="text-card-pre-venda-container">
+              <P class="title-pre-venda">Death Stranding</P>
+                <p class="description-game-pre-venda">Death Stranding é um jogo eletrônico de ação desenvolvido pela Kojima Productions e publicado pela Sony Interactive Entertainment. Foi lançado no dia 8 de novembro de 2019 para PlayStation 4 e em 14 de julho de 2020 para Microsoft Windows.<br><br><b><u>Data de Lançamento: 2024</u></b></p>
+                 <p class="precing">R$ 299,90</p>
+            </div>
+        </div>
+      </div>
+  
+<!-- Promoções -->
+<div>
+<div class="popular-games-container">
+  <div class="title-popular-games-container">
+    <h2>PROMOÇÕES</h2>
+      <p class="ver-tudo"><u>Ver tudo</u></p>
+  </div>
+  <div class="l-container">
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-1.jpg);">
+        <div class="hover-card-game-desconto">       
+             <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -20%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Ghotam Knights</P>
+            <p class="precing">R$ 119,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-2.jpg);" >
+        <div class="hover-card-game-desconto">       
+             <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -42%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Anthem</P>
+            <p class="precing">R$ 59,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-3.png);">
+        <div class="hover-card-game-desconto">       
+             <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -10%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Resident Evil Village</P>
+            <p class="precing">R$ 129,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-4.jpg);">
+        <div class="hover-card-game-desconto">         
+           <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -35%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Saints Row</P>
+            <p class="precing">R$ 59,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-5.png);">
+        <div class="hover-card-game-desconto">         
+           <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -20%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Dead by Daylight</P>
+            <p class="precing">R$ 59,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-6.jpg);">
+        <div class="hover-card-game-desconto">          
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -45%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Watch Dogs 2</P>
+            <p class="precing">R$ 119,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-7.png);">
+        <div class="hover-card-game-desconto">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -28%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Pray</P>
+            <p class="precing">R$ 99,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-8.jpg);">
+        <div class="hover-card-game-desconto">
+                    <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -40%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Rust</P>
+            <p class="precing">R$ 99,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-9.jpg);">
+        <div class="hover-card-game-desconto">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -15%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Multiversus</P>
+            <p class="precing">R$ 149,90</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-10.jpg);">
+        <div class="hover-card-game-desconto">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -30%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Outriders</P>
+            <p class="precing">R$ 109,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-11.jpg);">
+        <div class="hover-card-game-desconto">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </div>
+        <div class="desconto">
+          -32%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Mass Effect</P>
+            <p class="precing">R$ 99,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-12.png);">
+        <div class="hover-card-game-desconto">
+          <button class="btn ">Mais detalhes</button>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;" id="fa-solid"></i>
+        </div>
+        <div class="desconto">
+          -20%
+        </div>
+        <div class="text-card-container">
+          <div class="text-and-precing"> 
+          <P>Biomutant</P>
+            <p class="precing">R$ 149,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!--noticias-->
+<div class="popular-games-container">
+  <div class="title-popular-games-container">
+    <h2>NOTÍCIAS</h2>
+      <p class="ver-tudo"><u>Ver tudo</u></p>
+  </div>
+   <div class="noticias-container">
+      <div class="news">
+        <div class="title-and-button-news-container">
+          Final Fantasy XVI: Novo trailer mostra o mundo de Valisthea.
+          <button class="btn ">Mais detalhes</button>
+        </div>
+      </div>
+      <div class="news" id="news2">
+        <div class="title-and-button-news-container">
+          Cena de ação de John Wick 4 teve visual baseado no game Hong Kong Massacre.
+          <button class="btn ">Mais detalhes</button>
+        </div>
+      </div>
+      <div class="news" id="news3">
+        <div class="title-and-button-news-container">
+          Versão de PC de The Last of Us está sendo altamente criticada.
+          <button class="btn ">Mais detalhes</button>
+        </div>
+      </div>
+      <div class="news" id="news4">
+        <div class="title-and-button-news-container">
+          Sucesso! Resident Evil 4 vende mais de 3 milhões de cópias em 2 dias.
+          <button class="btn ">Mais detalhes</button>
+        </div>
+      </div>
+   </div>
+
+   <!--inscreva-se-->
+   <div class="subscribe-container">
+      <div class="subscribe">
+        <p>INSCREVA-SE</p>
+          <p class="description-subscribe">Inscreva-se em nossa caixa de email e mantenha-se atualizado sobre as novidades e promoções do mundo dos jogos!</p>
+      </div>
+      <div class="send-container">
+        <form>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+   </div>
+      
+<footer>
+  <div>
+    <p class="logo">GameStore</p>
+  </div>
+  <div>
+      <p class="option">Serviços</p>
+      <p class="option">Pagamentos</p>
+      <p class="option">FAQ</p>
+  </div>
+  <div>
+      <p class="option">Temos de compra</p>
+      <p class="option">Condições de garantia</p>
+      <p class="option">Contatos</p>
+  </div>
+  <div>
+      <p class="option">Informações legais</p>
+      <p class="option">Termo de acordo</p>
+      <p class="option">Politica de privacidade</p>
+  </div>
+  <div>
+      <p class="option">Noticias</p>
+      <p class="option">Termos de coorporação</p>
+      <p class="option">Faça parte do nosso time</p>
+  </div>
+  <div class="social-medias">
+    <i class="fa-brands fa-instagram" id="icon" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-whatsapp" id="icon" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-google-plus-g" id="icon" style="color: #ffffff;"></i>  
+  </div>
+</footer>
+</div>
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+  var emblaNode = document.querySelector('.embla')
+  var options = { loop: false }
+
+  var embla = EmblaCarousel(emblaNode, options)
+</script>
+
+
+
+
+
+
+</html>
