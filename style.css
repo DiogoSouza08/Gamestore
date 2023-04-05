@@ -72,6 +72,11 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1000px) {
+  .icons {
+    width: 120px;
+  }
+}
 
 main {
   background-image: url(./Imagens/main-img.webp);
@@ -103,12 +108,12 @@ main {
 
 .btn {
   border: none;
-  width: 40%;
-  font-size: 1.2vw;
+  width: auto;
+  font-size: 1vw;
   color: #fff;
   cursor: pointer;
   height: auto;
-  padding: 2.5%;
+  padding: 4% 40px;
   text-align: center;
   border: none;
   background-size: 300% 100%;
@@ -117,9 +122,10 @@ main {
   background-image: linear-gradient(to right, #19D3E8, #Af2cff, #19D3E8, #Af2cff);
   box-shadow: 0 4px 15px 0 rgba(20, 20, 20, 0.75);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 3000px) {
   .btn {
-    font-size: 2vw;
+    font-size: 1.3vw;
+    padding: 2.5% 30px;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -258,18 +264,18 @@ h2 {
 }
 
 .game-pre-venda {
-  width: 50%;
+  width: 50.5%;
   border-top-left-radius: 5%;
   border-bottom-left-radius: 5%;
 }
 @media only screen and (max-width: 1030px) {
   .game-pre-venda {
-    width: 52%;
+    width: 54%;
   }
 }
 @media only screen and (min-width: 1900px) {
   .game-pre-venda {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -290,7 +296,6 @@ h2 {
   align-items: center;
   width: 48.5%;
   height: auto;
-  cursor: pointer;
 }
 .pre-venda-container .cards-pre-venda-container {
   width: 100%;
@@ -299,7 +304,7 @@ h2 {
   align-items: center;
   padding: 3%;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
   .pre-venda-container .cards-pre-venda-container {
     flex-direction: column;
   }
@@ -314,7 +319,7 @@ h2 {
   color: #aaaaaa;
   text-align: justify;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
   .pre-venda-container .description-game-pre-venda {
     font-size: 1.7vw;
   }
@@ -331,7 +336,7 @@ h2 {
   flex-direction: column;
   font-size: 1.6vw;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
   .pre-venda-container .text-card-pre-venda-container {
     font-size: 4vw;
   }
@@ -339,6 +344,28 @@ h2 {
 .pre-venda-container .text-card-pre-venda-container .precing {
   color: #19D3E8;
   font-family: "Gilroy-Bold", sans-serif;
+}
+.pre-venda-container .btn {
+  font-size: 0.6vw;
+  width: auto;
+  padding: 3% 30px;
+  cursor: pointer;
+  box-shadow: none;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+  justify-content: center;
+}
+@media only screen and (max-width: 8300px) {
+  .pre-venda-container .btn {
+    font-size: 1.2vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .pre-venda-container .btn {
+    font-size: 2.5vw;
+  }
 }
 
 .desconto {
@@ -352,7 +379,7 @@ h2 {
   font-family: "Gilroy-Bold", sans-serif;
   color: #fff;
 }
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 430px) {
   .desconto {
     font-size: 1.3vw;
   }
@@ -367,7 +394,7 @@ h2 {
   padding: 2.5%;
   flex-wrap: wrap;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .noticias-container {
     flex-direction: column;
   }
@@ -386,7 +413,7 @@ h2 {
   font-size: 2vw;
   font-family: "Gilroy-Bold", sans-serif;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .news {
     font-size: 4vw;
     width: 100%;
@@ -405,8 +432,11 @@ h2 {
   font-size: 1.3vw;
   text-align: center;
   font-family: "Gilroy-Medium", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .news .btn {
     font-size: 2.5vw;
     width: 40%;
@@ -416,7 +446,7 @@ h2 {
 #news2 {
   background-image: url(./Imagens/news-2.png);
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   #news2 {
     margin-top: 2%;
   }
@@ -485,30 +515,30 @@ h2 {
 }
 
 .send-container {
-  width: 51.4%;
-  padding-top: 1.5%;
+  width: 53%;
+}
+.send-container .btn {
+  width: auto;
+  margin-top: 4%;
+  font-size: 1vw;
+  text-align: center;
+  font-family: "Gilroy-Bold", sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 1.7% 5.5%;
+  margin-left: 1.5%;
+  justify-content: center;
+}
+@media only screen and (max-width: 470px) {
+  .send-container .btn {
+    width: 30%;
+    font-size: 2.7vw;
+  }
 }
 @media only screen and (max-width: 470px) {
   .send-container {
-    width: 100%;
+    width: 80%;
   }
-}
-@media only screen and (max-width: 360px) {
-  .send-container {
-    width: 100%;
-  }
-  .send-container .btn {
-    align-items: center;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-}
-.send-container .btn {
-  align-items: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
 form {
@@ -524,33 +554,18 @@ form {
   }
 }
 
-label {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
 input[type=email] {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 1vw;
+  padding: 1.5%;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   width: 60%;
 }
-
-button[type=submit] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  width: 20%;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-left: 3%;
-}
-button[type=submit]:hover {
-  background-color: #0056b3;
+@media only screen and (max-width: 470px) {
+  input[type=email] {
+    width: 80%;
+    font-size: 2.3vw;
+  }
 }
 
 footer {
@@ -564,7 +579,7 @@ footer {
   padding: 2%;
   justify-content: space-between;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   footer .logo {
     font-size: 15px;
     padding-top: 13%;
@@ -573,7 +588,7 @@ footer {
 footer .option {
   cursor: pointer;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   footer .option {
     display: none;
   }
@@ -583,7 +598,7 @@ footer .social-medias {
   width: 6%;
   justify-content: space-around;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   footer .social-medias {
     width: 16%;
     font-size: 3.4vw;
@@ -605,11 +620,19 @@ footer .social-medias #icon {
 }
 .hover-card-game .btn {
   font-size: 0.8vw;
-  width: 50%;
+  width: auto;
   padding: 5%;
   cursor: pointer;
   box-shadow: none;
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 8300px) {
+  .hover-card-game .btn {
+    font-size: 1.2vw;
+  }
 }
 @media only screen and (max-width: 550px) {
   .hover-card-game .btn {
@@ -634,11 +657,19 @@ footer .social-medias #icon {
 }
 .hover-card-game-desconto .btn {
   font-size: 0.8vw;
-  width: 50%;
-  box-shadow: none;
-  z-index: 999;
+  width: auto;
   padding: 5%;
   cursor: pointer;
+  box-shadow: none;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 8300px) {
+  .hover-card-game-desconto .btn {
+    font-size: 1.2vw;
+  }
 }
 @media only screen and (max-width: 550px) {
   .hover-card-game-desconto .btn {
@@ -650,4 +681,41 @@ footer .social-medias #icon {
   margin-top: 5%;
   z-index: 999;
   cursor: pointer;
+}
+
+.hamburguer {
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .hamburguer {
+    display: block;
+  }
+}
+
+.menu {
+  background-color: #19D3E8;
+  width: 30%;
+  color: #fff;
+  top: 0;
+  right: 0;
+  height: 400%;
+  z-index: 998;
+  display: none;
+  position: fixed;
+}
+@media only screen and (max-width: 1000px) {
+  .menu {
+    display: block;
+  }
+}
+.menu ul {
+  display: flex;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 5vw;
+  height: 200px;
+  width: 60%;
+  flex-direction: column;
+  padding-top: 16%;
 }/*# sourceMappingURL=style.css.map */

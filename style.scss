@@ -79,7 +79,13 @@ a{
     width: 80px;
     display: flex;
     justify-content: space-between;
-}
+
+    @media only screen and (max-width:1000px){
+      width: 120px;
+    }
+      
+    }
+
 
 main{
     background-image: url(./Imagens/main-img.webp);
@@ -112,12 +118,12 @@ main{
 
 .btn {
     border: none;
-    width: 40%;
-    font-size: 1.2vw;
+    width: auto;
+    font-size: 1vw;
     color: #fff;
     cursor: pointer;
     height: auto;
-    padding: 2.5%;
+    padding: 4% 40px;
     text-align:center;
     border: none;
     background-size: 300% 100%;
@@ -125,8 +131,9 @@ main{
     font-family: $font-bold;
     background-image: linear-gradient(to right, #19D3E8, #Af2cff, #19D3E8, #Af2cff);
     box-shadow: 0 4px 15px 0 rgba(20, 20, 20, 0.75);
-    @media only screen and (max-width: 768px) {
-      font-size: 2vw;
+    @media only screen and (max-width: 3000px) {
+      font-size: 1.3vw;
+      padding: 2.5% 30px;
   }
     @media only screen and (max-width: 550px) {
       font-size: 3vw;
@@ -268,15 +275,15 @@ form{
     }
   }
   .game-pre-venda{
-    width: 50%;
+    width: 50.5%;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
 
     @media only screen and (max-width: 1030px) {
-      width: 52%;
+      width: 54%;
     }
     @media only screen and (min-width: 1900px) {
-      width: 85%;
+      width: 90%;
     }
 }
 
@@ -299,7 +306,6 @@ form{
       align-items: center;
       width: 48.5%;
       height: auto;
-      cursor: pointer;
 
     }
     
@@ -313,7 +319,7 @@ form{
       
 
     }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 550px) {
       .cards-pre-venda-container{
       flex-direction: column;
       }
@@ -330,7 +336,7 @@ form{
     margin: 7%;  
     color: #aaaaaa;
     text-align: justify;
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 550px) {
       font-size: 1.7vw;
     }
   }
@@ -346,7 +352,7 @@ form{
       align-items: center;
       flex-direction: column;
       font-size: 1.6vw; 
-      @media only screen and (max-width: 425px) {
+      @media only screen and (max-width: 550px) {
           font-size: 4vw;
         }
          .precing{
@@ -355,7 +361,28 @@ form{
         }
     }
 
-
+    .btn{
+      font-size: 0.6vw;
+      width: auto;
+      padding: 3% 30px;
+      cursor: pointer;
+      box-shadow: none;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4%;
+      justify-content: center;
+  
+      @media only screen and (max-width: 8300px) {
+        font-size: 1.2vw;
+        
+      }
+      @media only screen and (max-width: 550px) {
+        font-size: 2.5vw;
+      }
+   
+  
+    }
   }
 
 .desconto{
@@ -369,7 +396,7 @@ form{
   font-family: $font-bold;
   color: #fff;
 
-  @media only screen and (min-width: 426px) {
+  @media only screen and (min-width: 430px) {
    font-size: 1.3vw;
   }
 }
@@ -382,7 +409,7 @@ form{
   padding-top: 0;
   padding: 2.5%;
   flex-wrap: wrap;
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     flex-direction: column;
   }
 }
@@ -401,7 +428,7 @@ form{
   font-family: $font-bold;
 
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     font-size: 4vw;
     width: 100%;
 }
@@ -421,7 +448,10 @@ form{
   font-size: 1.3vw;
   text-align: center;
   font-family: $font-medium;
-  @media only screen and (max-width: 425px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 430px) {
     font-size: 2.5vw;
     width: 40%;
 }
@@ -430,7 +460,7 @@ form{
 
 #news2{
   background-image: url(./Imagens/news-2.png);
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     margin-top: 2%;
 }
 }
@@ -494,28 +524,30 @@ form{
 }
 
 .send-container{
-  width: 51.4%;
-  padding-top: 1.5%;
-  @media only screen and (max-width: 470px) {
-    width: 100%;
-  }
-  @media only screen and (max-width: 360px) {
-    width: 100%;
-    .btn{
-      align-items: center;
-      text-align: center;
-      display: flex;
-      justify-content: center;
+  width: 53%;
+  .btn{
+    width: auto;
+    margin-top: 4%;
+    font-size: 1vw;
+    text-align: center;
+    font-family: $font-bold;
+    display: flex;
+    align-items: center;
+    padding: 1.7% 5.5%;
+    margin-left: 1.5%;
+    justify-content: center;
+  
+    @media only screen and (max-width: 470px) {
+      width: 30%;
+      font-size: 2.7vw;
     }
   }
+  @media only screen and (max-width: 470px) {
+    width: 80%;
 
-  .btn{
-    align-items: center;
-    text-align: center;
-    display: flex;
-    justify-content: center;
   }
-}
+  }
+
 
 form {
   display: flex;
@@ -528,35 +560,22 @@ form {
   }
 }
 
-label {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
 
 input[type="email"] {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 1vw;
+  padding: 1.5%;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   width: 60%;
-}
+  @media only screen and (max-width: 470px) {
+    width: 80%;
+    font-size: 2.3vw;
 
-button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  width: 20%;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-left: 3%;
-
-  &:hover {
-    background-color: #0056b3;
   }
 }
+
+
+
 
 footer{
   background-color: $primary-color;
@@ -570,7 +589,7 @@ footer{
   justify-content: space-between;
 
 .logo{
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     font-size: 15px;
     padding-top: 13%;
   }
@@ -578,16 +597,18 @@ footer{
 
   .option{
     cursor: pointer;
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 768px) {
     display: none;}
   }
   .social-medias{
     display: flex;
     width: 6%;
     justify-content: space-around;
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 430px) {
       width: 16%;
-    font-size: 3.4vw;}
+      font-size: 3.4vw;}
+
+
 
     #icon{
       cursor: pointer;
@@ -608,15 +629,24 @@ footer{
 
   .btn{
     font-size: 0.8vw;
-    width: 50%;
+    width: auto;
     padding: 5%;
     cursor: pointer;
     box-shadow: none;
     z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 8300px) {
+      font-size: 1.2vw;
+      
+    }
     @media only screen and (max-width: 550px) {
       font-size: 2.5vw;
       
     }
+ 
 
   }
 
@@ -642,14 +672,25 @@ footer{
 
   .btn{
     font-size: 0.8vw;
-    width: 50%;
-    box-shadow: none;
-    z-index: 999;
+    width: auto;
     padding: 5%;
     cursor: pointer;
-    @media only screen and (max-width: 550px) {
-      font-size: 2.5vw; 
+    box-shadow: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 8300px) {
+      font-size: 1.2vw;
+      
     }
+    @media only screen and (max-width: 550px) {
+      font-size: 2.5vw;
+      
+    }
+ 
+
   }
 
 
@@ -660,4 +701,38 @@ footer{
   z-index: 999;
   cursor: pointer;
 
+}
+
+.hamburguer{
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+  @media only screen and (max-width: 1000px) {
+    display: block;
+  }
+}
+
+.menu{
+  background-color: #19D3E8;
+  width: 30%;
+  color: #fff;
+  top: 0;
+  right: 0;
+  height: 400%;
+  z-index: 998;
+  display: none;
+  position: fixed;
+  @media only screen and (max-width: 1000px) {
+    display: block;
+  }
+
+  ul{
+    display: flex;
+    font-family: $font-bold;
+    font-size: 5vw;
+    height: 200px;
+    width: 60%;
+    flex-direction: column;
+    padding-top: 16%;
+  }
 }
