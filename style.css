@@ -32,6 +32,7 @@ header {
   background-image: linear-gradient(to right, #19D3E8, #Af2cff);
   color: #fff;
   cursor: pointer;
+  margin-left: 3%;
 }
 
 .form-control {
