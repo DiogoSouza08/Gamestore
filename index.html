@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="cards.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>GameStore</title>
 </head>
 <body>
@@ -18,11 +19,10 @@
       Gamestore
    </div>
         <ul>
-            <li>Catalogo</li>
-            <li>Pré-vendas</li>
-            <li>Venda</li>
-            <li>Noticias</li>
-            <li>Sobre</li>
+          <a href="#Populares"><li>Populares</li></a>
+          <a href="#Promocoes"><li>Promoções</li></a>
+          <a href="#Pre-venda"><li>Pré-vendas</li></a>
+          <a href="#News"><li>Noticias</li></a>
         </ul>
         <div class="input-group rounded">
           <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
@@ -35,17 +35,25 @@
             <a href=""><i class="fa-solid fa-bell"></i></a>
             <a href=""><i class="fa-solid fa-user"></i></a>
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-              <div class="hamburguer">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            <div class="burguer active">
+              <div class="line1">
+              
               </div>
+              <div class="line2">
+              
+              </div>
+              <div class="line3">
+              
+              </div>
+            </div>
+            
           </div>
           <div class="menu">
             <ul>
-              <li>Catalogo</li>
-              <li>Pré-vendas</li>
-              <li>Venda</li>
-              <li>Noticias</li>
-              <li>Sobre</li>
+              <a href="#Populares"><li>Populares</li></a>
+              <a href="#Promocoes"><li>Promoções</li></a>
+              <a href="#Pre-venda"><li>Pré-vendas</li></a>
+              <a href="#News"><li>Noticias</li></a>
           </ul>
           </div>
 
@@ -151,7 +159,7 @@
 </div>
 
 <!-- popular games -->
-<div class="popular-games-container">
+<div class="popular-games-container" id="Populares">
   <div class="title-popular-games-container">
     <h2>POPULARES</h2>
       <p class="ver-tudo"><u>Ver tudo</u></p>
@@ -328,7 +336,7 @@
 </div>
 
 <!-- prevenda -->
-<div class="pre-venda-container">
+<div class="pre-venda-container" id="Pre-venda">
   <div class="title-popular-games-container">
     <h2>PRÉ-VENDA</h2>
       <p class="ver-tudo"><u>Ver tudo</u></p>
@@ -355,12 +363,12 @@
 <!-- Promoções -->
 <div>
 <div class="popular-games-container">
-  <div class="title-popular-games-container">
+  <div class="title-popular-games-container" >
     <h2>PROMOÇÕES</h2>
-      <p class="ver-tudo"><u>Ver tudo</u></p>
+      <p class="ver-tudo" id="Promocoes"><u>Ver tudo</u></p>
   </div>
   <div class="l-container">
-    <div class="b-game-card">
+    <div class="b-game-card" >
       <div class="b-game-card__cover" style="background-image: url(./Imagens/card-sale-1.jpg);">
         <div class="hover-card-game-desconto">       
              <button class="btn ">Mais detalhes</button>
@@ -577,7 +585,7 @@
 </div>
  
 <!--noticias-->
-<div class="popular-games-container">
+<div class="popular-games-container" id="News">
   <div class="title-popular-games-container">
     <h2>NOTÍCIAS</h2>
       <p class="ver-tudo"><u>Ver tudo</u></p>
@@ -624,25 +632,23 @@
    </div>
       
 <footer>
-  <div>
+  <div class="logo-footer-container">
     <p class="logo">GameStore</p>
   </div>
-  <div>
-      <p class="option">Serviços</p>
-      <p class="option">Pagamentos</p>
-      <p class="option">FAQ</p>
+  <div class= "container-option1">
+      
   </div>
-  <div>
+  <div class="container-option2">
       <p class="option">Temos de compra</p>
-      <p class="option">Condições de garantia</p>
+      <p class="option">Todas Condições de garantia</p>
       <p class="option">Contatos</p>
   </div>
-  <div>
+  <div class="container-option3">
       <p class="option">Informações legais</p>
       <p class="option">Termo de acordo</p>
-      <p class="option">Politica de privacidade</p>
+      <p class="option">Política de privacidade</p>
   </div>
-  <div>
+  <div class="container-option4">
       <p class="option">Noticias</p>
       <p class="option">Termos de coorporação</p>
       <p class="option">Faça parte do nosso time</p>
@@ -661,16 +667,12 @@
 
 </body>
 <script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 crossorigin="anonymous"></script>
-
 
 
 

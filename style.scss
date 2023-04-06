@@ -23,6 +23,8 @@ body{
     flex-direction: column;
     height: auto;
     
+
+    
 }
 header{
     display: flex;
@@ -47,7 +49,6 @@ width: 20%;
   background-color: #19d3e800;
 }
 ul{
-    text-decoration: none;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -61,8 +62,6 @@ ul{
       @media only screen and (max-width: 1306px) {
         font-size: 15px;
       }
-      
-
     }
 }
 a{
@@ -367,7 +366,7 @@ form{
       padding: 3% 30px;
       cursor: pointer;
       box-shadow: none;
-      z-index: 999;
+      z-index: 997;
       display: flex;
       align-items: center;
       margin-bottom: 4%;
@@ -395,10 +394,13 @@ form{
   top: 0;  
   font-family: $font-bold;
   color: #fff;
-
+ 
   @media only screen and (min-width: 430px) {
    font-size: 1.3vw;
   }
+  @media only screen and (max-width: 500px) {
+    font-size: 3.2vw;
+   }
 }
 
 .noticias-container{
@@ -409,7 +411,7 @@ form{
   padding-top: 0;
   padding: 2.5%;
   flex-wrap: wrap;
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 500px) {
     flex-direction: column;
   }
 }
@@ -428,7 +430,7 @@ form{
   font-family: $font-bold;
 
 
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 500px) {
     font-size: 4vw;
     width: 100%;
 }
@@ -451,7 +453,7 @@ form{
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 500px) {
     font-size: 2.5vw;
     width: 40%;
 }
@@ -460,7 +462,7 @@ form{
 
 #news2{
   background-image: url(./Imagens/news-2.png);
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 500px) {
     margin-top: 2%;
 }
 }
@@ -487,7 +489,7 @@ form{
   object-fit: cover;
   background-size: 100%;
   background-repeat: no-repeat ;
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 500px) {
     background-image: url(./Imagens/fundo\ subscribe\ site\ gamer\ mobile.jpg);
     height: 165vw;
     margin-top: 12%;
@@ -505,7 +507,7 @@ form{
     color: #fff;
     font-family: $font-bold;
     font-size: 3.5vw;
-    @media only screen and (max-width: 470px) {
+    @media only screen and (max-width: 500px) {
       width: 100%;
       font-size: 10vw;
     }
@@ -515,7 +517,7 @@ form{
       font-size: 1.3vw;
       width: 88%;
       font-family: $font-medium;
-      @media only screen and (max-width: 470px) {
+      @media only screen and (max-width: 500px) {
         font-size: 2.5vw;
         width: 82%;
       }
@@ -537,12 +539,12 @@ form{
     margin-left: 1.5%;
     justify-content: center;
   
-    @media only screen and (max-width: 470px) {
+    @media only screen and (max-width: 500px) {
       width: 30%;
       font-size: 2.7vw;
     }
   }
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 500px) {
     width: 80%;
 
   }
@@ -555,7 +557,7 @@ form {
   justify-content: center;
   margin: 0 auto;
   background-color: #ffffff00;
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 500px) {
     margin-bottom: 5.5%;
   }
 }
@@ -567,7 +569,7 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   width: 60%;
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 500px) {
     width: 80%;
     font-size: 2.3vw;
 
@@ -582,39 +584,71 @@ footer{
   width: 100%;
   color: #fff;
   display: flex;
-  font-size: 1vw;
   align-items: center;
+  font-size: 1.6vw;
   text-align: center;
   padding: 2%;
-  justify-content: space-between;
-
-.logo{
-  @media only screen and (max-width: 430px) {
-    font-size: 15px;
-    padding-top: 13%;
+  justify-content: space-around;
+  @media only screen and (max-width: 500px) {
+    flex-wrap: wrap;
+    align-items: start;
+    flex-direction: column;
+    padding: 5%;
   }
+ 
+  .logo-footer-container{
+    @media only screen and (max-width: 500px) {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      width: 89%;
+      margin-top : 0%;
+      position: absolute;
+      .logo{
+        font-size: 6vw;
+      }
+  }
+  }
+
 }
 
   .option{
     cursor: pointer;
+    font-size: 1vw;
+    width: 100%;
+    text-align: start;
     @media only screen and (max-width: 768px) {
-    display: none;}
+      font-size: 1.4vw;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.4vw;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 3.6vw;
+    }
   }
   .social-medias{
     display: flex;
-    width: 6%;
+    width: 8%;
     justify-content: space-around;
-    @media only screen and (max-width: 430px) {
-      width: 16%;
-      font-size: 3.4vw;}
-
-
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      height: 60px;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 30%;
+      flex-direction: row;
+      position: absolute;
+      margin-top: 85px;
+      margin-left: 59.2%;
+      font-size: 5.8vw;}
 
     #icon{
       cursor: pointer;
     }
   }
-}
+ 
+
 
 .hover-card-game{
   display: flex;
@@ -633,7 +667,7 @@ footer{
     padding: 5%;
     cursor: pointer;
     box-shadow: none;
-    z-index: 999;
+    z-index: 997;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -654,7 +688,6 @@ footer{
   margin-top: 5%;
   z-index: 999;
   cursor: pointer;
-
 }
 
 }
@@ -689,21 +722,19 @@ footer{
       font-size: 2.5vw;
       
     }
- 
-
   }
-
-
 }
+
 
 #fa-solid{
   margin-top: 5%;
   z-index: 999;
   cursor: pointer;
-
 }
 
-.hamburguer{
+
+// Estilização-menu-mobilie
+.burguer {
   display: none;
   z-index: 999;
   cursor: pointer;
@@ -712,27 +743,92 @@ footer{
   }
 }
 
-.menu{
+.menu {
   background-color: #19D3E8;
-  width: 30%;
+  width: 40%;
   color: #fff;
   top: 0;
-  right: 0;
-  height: 400%;
+  right: -100%;
+  height: 100vh;
   z-index: 998;
-  display: none;
   position: fixed;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+  @media only screen and (max-width: 680px) {
+    width: 50%;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 65%;
+  }
+  @media only screen and (max-width: 380px) {
+    width: 75%;
+  }
+  ul {
+    display: flex;
+    font-family: $font-bold;
+    height: 235px;
+    width: 80%;
+    flex-direction: column;
+    margin-top: 30%;
+    padding-left: 10%;
+    text-align: start;
+
+    li{
+      font-size: 3.4vw;
+      @media only screen and (max-width: 500px) {
+        font-size: 4.8vw;
+      }
+      @media only screen and (max-width: 390px) {
+        font-size: 5.4vw;
+      }
+    }
+  }
+
+  &.active {
+    transform: translateX(0%);
+    right: 0;
+  }
+
+}
+
+
+.menu.active {
+  right: 0;
+}
+
+.burguer div {
+  background-color: #fff;
+  width: 19px;
+  height: 3px;
+  margin: 4px;
+  display: flex;
+  z-index: 999;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.4s ease-out;
+  display: none;
+
   @media only screen and (max-width: 1000px) {
     display: block;
   }
-
-  ul{
-    display: flex;
-    font-family: $font-bold;
-    font-size: 5vw;
-    height: 200px;
-    width: 60%;
-    flex-direction: column;
-    padding-top: 16%;
-  }
 }
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 6px);
+  transition: transform 0.5s ease-in;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -6px);
+  transition: transform 0.5s ease-in;
+}
+
+.toggle .line2 {
+  opacity:0;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+
