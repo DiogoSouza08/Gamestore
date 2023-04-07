@@ -30,7 +30,7 @@ h2{
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 550px) {
 
       main{
         justify-content: center;
@@ -46,9 +46,7 @@ h2{
             font-size: 3.8vw;
         }
     }
-    .carousel{
-      display: none;
-    }
+   
       }
      
     
@@ -89,4 +87,11 @@ h2{
       display: none;
      }
 
+    }
+
+
+    @media only screen and (max-width: 767px) {
+      .carousel{
+        display: none;
+      }
     }
