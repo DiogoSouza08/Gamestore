@@ -286,11 +286,20 @@ form{
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
 
+    @media only screen and (min-width: 1900px) {
+      width: 90%;
+    }
     @media only screen and (max-width: 1030px) {
       width: 54%;
     }
-    @media only screen and (min-width: 1900px) {
-      width: 90%;
+    
+    @media only screen and (max-width: 500px) {
+      position: absolute;
+      border-bottom-left-radius: 0%;
+      border-top-right-radius: 5%;
+      border-bottom-right-radius: 0%;
+      width: 94%;
+
     }
 }
 
@@ -313,6 +322,13 @@ form{
       align-items: center;
       width: 48.5%;
       height: auto;
+      @media only screen and (max-width: 500px){
+        height: 175vw;
+        flex-direction: column;
+      }
+      @media only screen and (max-width:375px){
+        height: 177vw;
+      }
 
     }
     
@@ -344,7 +360,8 @@ form{
     color: #aaaaaa;
     text-align: justify;
     @media only screen and (max-width: 500px) {
-      font-size: 2.1vw;
+      font-size: 3.2vw;
+      margin-top: -0.2%;
     }
   }
 
@@ -360,12 +377,15 @@ form{
       flex-direction: column;
       font-size: 1.6vw; 
       @media only screen and (max-width: 500px) {
-          font-size: 4vw;
+          font-size: 7vw;
+          margin-top: 109%;
+          height: 30%;
         }
          .precing{
           color: #19D3E8;
           font-family: $font-bold;
         }
+     
     }
 
     .btn{
@@ -385,7 +405,8 @@ form{
         
       }
       @media only screen and (max-width: 500px) {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
+        padding: 9px 30px;
       }
    
   
