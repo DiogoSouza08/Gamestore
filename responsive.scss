@@ -8,16 +8,15 @@
         justify-content: start;
     }
     .slogan-and-button-principal-container{
-        width: 70%;
-        margin-left: 0%;
-        padding-left: 7%;
+        width: 65%;
+        margin-left: 4%;
         justify-content: start;
          h1{
             font-size: 7vw;
          }
     }
     .slogan-description{
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
 
     .input-group{
@@ -33,17 +32,18 @@ h2{
 
 @media only screen and (max-width: 550px) {
 
-
+      main{
+        justify-content: center;
+    }
     .slogan-and-button-principal-container{
         width: 80%;
         margin-left: 0%;
         justify-content: center;
-        padding-left: 0%;
          h1{
-            font-size: 8vw;
+            font-size: 9vw;
          }
          .slogan-description{
-            font-size: 3vw;
+            font-size: 3.8vw;
         }
     }
    
@@ -53,9 +53,9 @@ h2{
       @media screen and (max-width: 425px) {
 
         main{
-          justify-content: center;
-          align-items: center;
-      }
+            justify-content: center;
+            flex-direction: column;
+        }
         h2{
             font-size: 8vw;
         }
@@ -90,7 +90,7 @@ h2{
     }
 
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 767px) {
       .carousel{
         display: none;
       }

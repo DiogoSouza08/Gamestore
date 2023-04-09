@@ -87,49 +87,18 @@ main {
   background-size: cover;
   color: #fff;
 }
-@media only screen and (max-width: 650px) {
-  main {
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    padding-top: 13%;
-    padding-left: 7%;
-  }
-}
-@media only screen and (max-width: 550px) {
-  main {
-    justify-content: center;
-    align-items: center;
-    padding-left: 0%;
-  }
-}
 
 .slogan-and-button-principal-container {
   display: flex;
-  width: 47%;
+  width: 45%;
   font-family: "Gilroy-Bold", sans-serif;
   height: auto;
   flex-direction: column;
   margin-left: 4.6%;
   margin-top: -8%;
 }
-@media only screen and (max-width: 760px) {
-  .slogan-and-button-principal-container {
-    width: 80%;
-  }
-}
 .slogan-and-button-principal-container h1 {
   font-size: 5vw;
-}
-@media only screen and (max-width: 425px) {
-  .slogan-and-button-principal-container {
-    margin-top: -18%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .slogan-and-button-principal-container {
-    margin-top: -35%;
-  }
 }
 
 .btn-container {
@@ -215,13 +184,7 @@ form {
 
 .col-md-3 {
   padding: 3.7%;
-  width: 25%;
   background-color: #151c37;
-}
-@media only screen and (max-width: 767px) {
-  .col-md-3 {
-    padding: 4.7%;
-  }
 }
 
 .carousel-control-prev {
@@ -251,11 +214,6 @@ form {
   font-size: 1.5vw;
   line-height: 115%;
   color: #fff;
-}
-@media only screen and (max-width: 767px) {
-  .card-text {
-    font-size: 4vw;
-  }
 }
 
 .popular-games-container {
@@ -926,44 +884,4 @@ footer {
 
 body.menu-open {
   overflow: hidden;
-}
-
-.slider {
-  display: none;
-}
-@media only screen and (max-width: 650px) {
-  .slider {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8%;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .slider {
-    width: 50%;
-    margin-top: 6.5%;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .slider {
-    width: 80%;
-    margin-top: 6.5%;
-    align-items: start;
-    justify-content: start;
-  }
-}
-
-.embla {
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-}
-
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
 }/*# sourceMappingURL=style.css.map */
