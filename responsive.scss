@@ -32,9 +32,6 @@ h2{
 
 @media only screen and (max-width: 550px) {
 
-      main{
-        justify-content: center;
-    }
     .slogan-and-button-principal-container{
         width: 80%;
         margin-left: 0%;
@@ -50,10 +47,10 @@ h2{
       }
      
     
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 585px) {
 
         main{
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: column;
         }
         h2{

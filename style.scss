@@ -98,6 +98,7 @@ main{
     color: #fff;
 }
 
+
 .slogan-and-button-principal-container{
     display: flex;
     width: 45%;
@@ -106,9 +107,14 @@ main{
     flex-direction: column;
     margin-left: 4.6%;
     margin-top: -8%;
-    
+    @media only screen and (max-width: 585px){
+      margin-top: 16%;
+    }
     h1{
       font-size: 5vw;
+    }
+    @media only screen and (min-height: 740px) {
+      margin-top: 35%;
     }
 }
 
@@ -881,3 +887,26 @@ body.menu-open {
 }
 
 
+.img-main-mobile{
+display: none;
+@media only screen and (max-width: 555px) {
+width: 100%;
+height: 80%;
+display: block;
+background-size: cover ;
+background-image: url(./Imagens/mobile_legends_revamped_karina_transparent_png_by_divoras_delqhep.png);
+}
+@media only screen and (max-width: 555px) {
+  height: 38%;
+
+}
+
+@media only screen and (max-width: 360px) {
+  height: 46%;
+
+}
+@media only screen and (max-height: 950px) {
+  height: 40%;
+
+}
+}
