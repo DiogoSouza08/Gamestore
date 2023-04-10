@@ -105,7 +105,7 @@ main {
 .slogan-and-button-principal-container h1 {
   font-size: 5vw;
 }
-@media only screen and (min-height: 740px) {
+@media only screen and (max-height: 740px) {
   .slogan-and-button-principal-container {
     margin-top: 35%;
   }
@@ -905,7 +905,7 @@ body.menu-open {
     height: 80%;
     display: block;
     background-size: cover;
-    background-image: url(./Imagens/mobile_legends_revamped_karina_transparent_png_by_divoras_delqhep.png);
+    background-image: url(./Imagens/fundo\ mobile\ img.png);
   }
 }
 @media only screen and (max-width: 555px) {
