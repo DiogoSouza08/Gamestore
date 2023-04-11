@@ -802,6 +802,9 @@ footer {
   color: #fff;
   top: 0;
   right: -100%;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
   height: 100vh;
   z-index: 998;
   position: fixed;
@@ -849,6 +852,31 @@ footer {
 .menu.active {
   transform: translateX(0%);
   right: 0;
+}
+.menu .login-container {
+  background-color: #535353;
+  width: 100%;
+  font-family: "Gilroy-Bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5%;
+  cursor: pointer;
+}
+.menu .login-container .login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  font-size: 2.4vw;
+}
+@media only screen and (max-width: 680px) {
+  .menu .login-container .login {
+    font-size: 5vw;
+  }
+}
+.menu .login-container .login .login-text {
+  padding-left: 10%;
 }
 
 .menu.active {
