@@ -105,11 +105,6 @@ main {
 .slogan-and-button-principal-container h1 {
   font-size: 5vw;
 }
-@media only screen and (max-height: 740px) {
-  .slogan-and-button-principal-container {
-    margin-top: 35%;
-  }
-}
 
 .btn-container {
   display: flex;
