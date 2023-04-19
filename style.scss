@@ -37,19 +37,7 @@ header{
     text-align: center;
     width: 100%;
 }
-.input-group{
-width: 20%;
-}
-#search-addon{
-  background-image: linear-gradient(to right, #19D3E8, #Af2cff);
-  color: #fff;
-  cursor: pointer;
-  margin-left: 3%;
 
-}
-.form-control{
-  background-color: #19d3e800;
-}
 ul{
     list-style: none;
     display: flex;
@@ -64,6 +52,7 @@ ul{
       @media only screen and (max-width: 1306px) {
         font-size: 15px;
       }
+    
     }
 }
 a{

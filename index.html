@@ -24,12 +24,7 @@
           <a href="#Pre-venda"><li>Pré-vendas</li></a>
           <a href="#News"><li>Noticias</li></a>
         </ul>
-        <div class="input-group rounded">
-          <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
-          <span class="input-group-text border-0" id="search-addon">
-            <i class="fas fa-search"></i>
-          </span>
-        </div>
+        
 
           <div class="icons">
             <a href=""><i class="fa-solid fa-bell"></i></a>
@@ -671,7 +666,23 @@
 </footer>
 </div>
 
+<script>
+  window.onload = function() {
+    // rola para o topo da página quando a página é carregada
+    window.scrollTo(0, 0);
+  }
+</script>
+<script>
+  window.onload = function() {
+    // rola para o topo da página quando a página é carregada
+    window.scrollTo(0, 0);
 
+    // detecta quando a página é recarregada e rola para o topo
+    window.addEventListener('beforeunload', function() {
+      window.scrollTo(0, 0);
+    });
+  }
+</script>
 
 
 

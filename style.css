@@ -24,21 +24,6 @@ header {
   width: 100%;
 }
 
-.input-group {
-  width: 20%;
-}
-
-#search-addon {
-  background-image: linear-gradient(to right, #19D3E8, #Af2cff);
-  color: #fff;
-  cursor: pointer;
-  margin-left: 3%;
-}
-
-.form-control {
-  background-color: rgba(25, 211, 232, 0);
-}
-
 ul {
   list-style: none;
   display: flex;
